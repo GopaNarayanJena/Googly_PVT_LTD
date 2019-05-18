@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="45dp"
+    android:id="@+id/rl">
+
+    <TextView
+        android:id="@+id/tx_1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Order ID" />
+
+    <TextView
+        android:id="@+id/tx_2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/tx_1"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Order Date" />
+
+    <TextView
+        android:id="@+id/tx_3"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/tx_2"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Customer ID" />
+
+    <TextView
+        android:id="@+id/tx_4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/tx_3"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Order Amount" />
+
+    <ImageView
+        android:id="@+id/chck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tx_4"
+        android:src="@drawable/ic_check"
+        android:textAlignment="textEnd"
+        android:visibility="invisible" />
+
+</RelativeLayout>

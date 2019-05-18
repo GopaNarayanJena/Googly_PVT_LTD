@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutcustomer"
+    tools:context=".tcustomer">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Customer ID"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/id"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Customer Name" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/name"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Customer City" />
+
+
+    <ListView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-90dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/id" />
+
+</RelativeLayout>

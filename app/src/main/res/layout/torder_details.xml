@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="Order ID"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/id"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Order Date" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/name"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Customer ID" />
+
+    <TextView
+        android:id="@+id/amt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/city"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Order Amount" />
+
+
+    <ListView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/id" />
+</RelativeLayout>

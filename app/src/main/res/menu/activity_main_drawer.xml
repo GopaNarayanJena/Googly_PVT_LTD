@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="company details">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/customer"
+                    android:icon="@drawable/customer"
+                    android:title="Customer"/>
+                <item
+                    android:id="@+id/order_details"
+                    android:icon="@drawable/order"
+                    android:title="Order Details" />
+                <item
+                    android:id="@+id/order_item"
+                    android:icon="@drawable/oitem"
+                    android:title="Order Item" />
+                <item
+                    android:id="@+id/items"
+                    android:icon="@drawable/item"
+                    android:title="Items"/>
+                <item
+                   android:id="@+id/shipment"
+                   android:icon="@drawable/ship1"
+                   android:title="Shipment Details" />
+                <item
+                    android:id="@+id/warehouse"
+                    android:icon="@drawable/warehouse"
+                    android:title="Warehouse Details"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="operation">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/q1"
+                    android:title="query1"
+                    android:icon="@drawable/query"/>
+                <item
+                    android:id="@+id/q2"
+                    android:icon="@drawable/query"
+                    android:title="query2"/>
+                <item
+                    android:id="@+id/q3"
+                    android:icon="@drawable/query"
+                    android:title="query3    X"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/aboutus"
+                android:icon="@drawable/aboutus"
+                android:title="aboutus" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutcustomer"
+    tools:context=".tcustomer">
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="8dp"
+        android:background="#8fe44d"
+        android:text="@string/customer_name_no_of_order_placed_along_with_average_amount"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:text="Customer Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/noo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@+id/cname"
+        android:gravity="center"
+        android:text="No.Of Order"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/avg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/noo"
+        android:gravity="center"
+        android:text="Average Amount"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/id" />
+
+</RelativeLayout>

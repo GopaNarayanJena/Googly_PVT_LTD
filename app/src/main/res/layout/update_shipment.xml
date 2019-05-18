@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/oid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="85dp"
+        android:text="Order Id:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17sp" />
+    <Spinner
+        android:id="@+id/shipment_oid"
+        android:layout_width="305dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="110dp"
+        android:gravity="center_vertical"
+        android:hint="enter order id"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/ocid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="155dp"
+        android:text="Warehouse Id:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17sp" />
+    <Spinner
+        android:id="@+id/shipment_wid"
+        android:layout_width="305dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center_vertical"
+        android:hint="enter warehouse id"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/odate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
+        android:text="Ship Date:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/shipment_sdate"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="YYYY-MM-DD"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:text="Submit"
+        android:onClick="Onsubmitshipment"/>
+
+</RelativeLayout>
